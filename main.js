@@ -158,15 +158,18 @@ function sendContact() {
 if (isValid()){
     let usr = new User(email.value, message.value);
 
-        alert("Thanks for your message.")
+        // alert("Thanks for your message.")
         text = "Thanks for your message.";
         display_message.innerHTML = text;
 
+
+
 } else {
-        alert("Fill your email and message fields, please")
+        // alert("Fill your email and message fields, please")
         // field.className = 'placeholderRed';
         text = "Please Enter valid Email and Message";
         display_message.innerHTML = text;
+
 }    
 }
 
