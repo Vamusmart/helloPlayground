@@ -173,3 +173,161 @@ if (isValid()){
 
 ///// Contact us ends /////
 
+
+
+
+
+
+// JavaScript Document
+    //Button 1
+    document.getElementById("load-1").onclick = function(){
+
+      var request;
+  
+      if(window.XMLHttpRequest){
+        request = new XMLHttpRequest();
+      }
+      else {
+        request = new  ActiveXObject("Microsoft.XMLHTTP");
+      }
+  
+      request.open('GET', 'json/tab1.json');
+  
+      request.onreadystatechange = function(){
+        if((request.readyState === 4) && (request.status === 200)){
+          
+          var items = JSON.parse(request.responseText);
+                  console.log(items);
+          
+                  var output = "";
+  
+                  for(var key in items){
+                  output +=  items[key].content;
+                  document.getElementById('load-1').style.background = "black";
+                  document.getElementById('load-1').style.color = "white";
+                  document.getElementById('load-2').style.background = "#bbbbbb";
+                  document.getElementById('load-2').style.color = "black";
+                  document.getElementById('load-3').style.background = "#bbbbbb";
+                  document.getElementById('load-3').style.color = "black";
+                  document.getElementById('load-1').innerHTML = '❮ Vestibolum at odio sit amet ❯';
+                  document.getElementById('load-2').innerHTML = 'Sed vehicula neque';
+                  document.getElementById('load-3').innerHTML = 'Nulla id libero pretium';
+
+
+
+
+
+                  }
+          
+                
+  
+                  document.getElementById("update").innerHTML = output;
+        }
+      };
+  
+      request.send();
+  
+      }
+      
+  
+  
+          
+      //Button 2
+      document.getElementById("load-2").onclick = function(){
+  
+          var request;
+  
+          if(window.XMLHttpRequest){
+              request = new XMLHttpRequest();
+          }
+          else {
+              request = new  ActiveXObject("Microsoft.XMLHTTP");
+          }
+  
+  
+          request.open('GET', 'json/tab2.json');
+  
+          request.onreadystatechange = function(){
+              if((request.readyState === 4) && (request.status === 200)){
+          
+                  var items = JSON.parse(request.responseText);
+                  console.log(items);
+          
+                  var output = "";
+  
+                  for(var key in items){
+                  output +=  items[key].content;
+                  document.getElementById('load-1').style.background = "#bbbbbb";
+                  document.getElementById('load-1').style.color = "black";
+                  document.getElementById('load-2').style.background = "black";
+                  document.getElementById('load-2').style.color = "white";
+                  document.getElementById('load-3').style.background = "#bbbbbb";
+                  document.getElementById('load-3').style.color = "black";
+                  document.getElementById('load-1').innerHTML = 'Vestibolum at odio sit amet';
+                  document.getElementById('load-2').innerHTML = '❮ Sed vehicula neque ❯';
+                  document.getElementById('load-3').innerHTML = 'Nulla id libero pretium';
+
+                  }
+          
+                
+  
+                  document.getElementById("update").innerHTML = output;
+  
+              }
+          };
+  
+          request.send();
+  
+      }
+  
+  
+  
+  
+      //Button 3
+      document.getElementById("load-3").onclick = function(){
+  
+          var request;
+  
+          if(window.XMLHttpRequest){
+              request = new XMLHttpRequest();
+          }
+          else {
+              request = new  ActiveXObject("Microsoft.XMLHTTP");
+          }
+  
+  
+          request.open('GET', 'json/tab3.json');
+  
+          request.onreadystatechange = function(){
+              if((request.readyState === 4) && (request.status === 200)){
+          
+                  var items = JSON.parse(request.responseText);
+                  console.log(items);
+          
+                  var output = "";
+  
+                  for(var key in items){
+                  output +=  items[key].content;
+                  document.getElementById('load-1').style.background = "#bbbbbb";
+                  document.getElementById('load-1').style.color = "black";
+                  document.getElementById('load-2').style.background = "#bbbbbb";
+                  document.getElementById('load-2').style.color = "black";
+                  document.getElementById('load-3').style.background = "black";
+                  document.getElementById('load-3').style.color = "white";
+                  document.getElementById('load-1').innerHTML = 'Vestibolum at odio sit amet';
+                  document.getElementById('load-2').innerHTML = 'Sed vehicula neque';
+                  document.getElementById('load-3').innerHTML = '❮ Nulla id libero pretium ❯';
+                  
+                  }
+          
+                
+  
+                  document.getElementById("update").innerHTML = output;
+  
+              }
+          };
+  
+          request.send();
+  
+      }
+

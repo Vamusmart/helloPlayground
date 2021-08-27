@@ -63,6 +63,7 @@ body {
 }
 
 /* section {
+  min-height: 100vh;
   padding: 4rem 0;
 } */
 
@@ -362,33 +363,60 @@ header label {
 
 .about .column {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: var(--black);
-  margin-top: -1rem;
+  /* margin-top: -1rem; */
 }
 
 .about #wedo {
+  /* flex-direction: row-reverse; */
+  display: flex;
   flex-direction: row-reverse;
+  width: 100%;
+  background-color: white;
+}
+
+#wedoheading,
+#wedotext {
   background-color: white;
   color: black;
   text-align: right;
 }
 
+#wedoheading {
+  margin-right: 10rem;
+}
+
+.about #wedo .content {
+  flex-shrink: 0;
+  flex-basis: 58%;
+}
+
+#wedo-btn-pro {
+  margin-left: 69rem;
+}
+
+#wedo-btn-pro,
 #wedo-btn {
   background-color: var(--white);
   color: var(--black);
   border-color: var(--black);
 }
 
-.about .column .image {
-  flex: 1 1 40rem;
+.about #careers {
+  margin-top: -0.5rem;
 }
 
-.about .column .content {
+/* .about .column .image {
   flex: 1 1 40rem;
-}
+} */
+
+/* .about .column .content {
+  flex: 1 1 40rem;
+} */
 
 .about .column .content p {
   font-size: 1.8rem;
@@ -396,23 +424,28 @@ header label {
   padding: 1rem 13rem;
 }
 
-.about .column .content .buttons {
-  padding-bottom: 8rem;
-}
-
-.about .column .content .buttons a:last-child {
+.buttons {
   margin-left: 13rem;
 }
 
-#wedo a:last-child {
-  margin-right: 13rem;
+/* 
+.about .column .content .buttons {
+  padding-bottom: 8rem;
+} */
+
+/* .about .column .content .buttons a:last-child {
+  align-items: center;
+  margin-left: 13rem;
 }
+
+.about .column .content .button a:last-child {
+  margin-left: 13rem;
+} */
 
 .about .column .heading {
   text-align: left;
   background: var(--black);
   color: transparent;
-  /* background-clip: text; */
   color: var(--white);
   font-size: 7rem;
   line-height: 6.5rem;
@@ -421,19 +454,35 @@ header label {
   padding-bottom: 2rem;
 }
 
+/* .about #wedo .heading h1 {
+  text-align: right;
+  background: var(--white);
+  color: transparent;
+  color: var(--black);
+  font-size: 7rem;
+  line-height: 6.5rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
+  padding-bottom: 2rem;
+} */
+
+.about .column .image {
+  flex-shrink: 0;
+  flex-basis: 58%;
+}
+
 /**
  *  CALLS Ajax
  */
 
-.calls {
+/* .calls {
   display: flex;
   align-items: center;
   text-align: center;
   padding: 5rem 1rem;
-  background: url(../images/slide-play.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .calls .callBox h3 {
   text-align: center;
@@ -461,8 +510,8 @@ header label {
 }
 
 .card .box-container .box {
-  flex: 1 1 27rem;
-  margin: 3rem;
+  flex: 1 1 30rem;
+  margin: 1rem;
   background: var(--white);
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -520,6 +569,10 @@ header label {
   padding-right: 13rem;
   padding-bottom: 2rem;
   margin-right: 13rem;
+}
+
+.contact .container #wedo-btn {
+  text-align: left;
 }
 
 form {
@@ -735,15 +788,91 @@ textarea {
   color: var(--grey);
 }
 
+/* ajx start */
+.container-ajx {
+  font-size: 1.5rem;
+  max-width: 90%;
+  margin: auto;
+  line-height: 1.5;
+  padding: 5rem;
+  background-color: #d9d9d9;
+}
+
+.flex-ajx {
+  display: flex;
+  /* width: 100%; */
+  width: 100%;
+  margin: auto 0rem 0rem;
+  color: white;
+}
+
+.colajx {
+  margin-left: 0rem;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.sidebar {
+  flex: 1;
+  margin: 0;
+}
+
+.mainajx {
+  /* flex-shrink: 0;
+  flex-basis: 70%; */
+  flex-shrink: 0;
+  flex-basis: 70%;
+  height: 30rem;
+  background-color: white;
+}
+
+#update {
+  padding: 2rem;
+  font-size: 1.45rem;
+}
+
+#load-1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding-top: 2rem;
+  border: 0.1rem solid white;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#load-2,
+#load-3 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding-top: 2rem;
+  border: 0.1rem solid white;
+  color: black;
+  background-color: #bbbbbb;
+  text-align: center;
+}
+
+/* ajx ends */
+
 /**
  *  MEDIA QUERIES
  */
 
 /* hp 24" */
 
-@media (max-width: 3500px) {
+@media (max-width: 3500px) and (min-width: 1800px) {
   html {
     font-size: 72%;
+  }
+
+  #wedo-btn-pro {
+    margin-left: 88rem;
+  }
+
+  #wedoheading {
+    margin-right: 1rem;
   }
 
   .mySlides {
@@ -759,7 +888,7 @@ textarea {
 
 /* macpro */
 
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   html {
     font-size: 72%;
   }
@@ -784,11 +913,22 @@ textarea {
     margin-top: 0.2rem;
     font-size: 1.5rem;
   }
+
+  #wedo-btn-pro {
+    margin-left: 47rem;
+  }
+
+  /* #wedo-btn {
+    margin-left: 36rem;
+  } */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   html {
     font-size: 40%;
+  }
+  #wedo-btn-pro {
+    margin-left: 50rem;
   }
 }
 
@@ -863,12 +1003,11 @@ textarea {
     width: fit-content;
     top: 22%;
   }
-  /* 
+
   .content-cookie p {
     margin-left: 0.2rem;
     margin-top: 0.2rem;
     font-size: 1.8rem;
-    color: red;
   }
 
   .wrapper {
@@ -877,7 +1016,7 @@ textarea {
   }
   .mySlides {
     height: 60rem;
-  } */
+  }
 }
 
 @media (max-width: 450px) {
@@ -905,11 +1044,6 @@ textarea {
   .about .column .content .buttons-white a {
     width: 100%;
     text-align: center;
-  }
-
-  .about .column .content p {
-    text-align: center;
-    margin: 2rem;
   }
 
   .text {
@@ -953,6 +1087,16 @@ textarea {
     padding-top: 3rem;
   }
 
+  .about .column .content p {
+    text-align: center;
+  }
+
+  .about .column .content p {
+    text-align: center;
+
+    padding: 5rem 13rem;
+  }
+
   .card .box-container .box {
     margin-right: 0;
     margin-left: 0;
@@ -964,7 +1108,7 @@ textarea {
 
   /* cookies bar */
   .wrapper {
-    margin-top: 92rem;
+    margin-top: 90rem;
     left: 0.2rem;
     width: 99%;
     border-radius: 1px;
@@ -989,6 +1133,40 @@ textarea {
 
   .mySlides {
     height: 100rem;
+  }
+  .container-ajx {
+    max-width: 90%;
+    padding: 0.5rem;
+    background-color: white;
+  }
+
+  .flex-ajx {
+    /* flex-direction: column; */
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about .column {
+    flex-direction: column;
+  }
+
+  .about #wedo {
+    flex-direction: column;
+  }
+
+  #wedo-btn-pro,
+  #wedo-btn,
+  .buttons {
+    width: 100%;
+    align-items: center;
+    margin: 0 0rem;
+  }
+
+  #wedoheading,
+  #wedotext {
+    text-align: center;
+    width: 100%;
   }
 }
 
