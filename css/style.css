@@ -1037,27 +1037,27 @@ textarea {
 }
 
 /* iphone 6 */
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .mySlides img {
-    min-height: 90%;
+    min-height: 92%;
   }
 
   .mySlides {
-    height: 80rem;
+    height: 83rem;
   }
 
   .about .column .image img {
-    height: 35rem;
+    height: 37rem;
   }
   .about .column .content p {
     padding: 5rem 8rem;
   }
   .about .column .heading {
-    margin-top: 7rem;
+    margin-top: 10rem;
   }
 
   .contact .column .content p {
@@ -1065,6 +1065,12 @@ textarea {
   }
 
   .wrapper {
-    margin-top: 70rem;
+    margin-top: 77rem;
+  }
+  .input,
+  .msg .area {
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
   }
 }
