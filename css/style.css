@@ -83,10 +83,25 @@ body {
   margin-right: 12em;
 }
 
+form .btn:hover,
+#wedo .btn:hover,
 .btn:hover {
   color: var(--black);
   transition-delay: 0.5s;
   background-color: var(--yellow);
+}
+
+form .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 2rem 3rem;
+  background: var(--white);
+  font-size: 1.7rem;
+  color: var(--black);
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0.1rem solid var(--black);
+  font-weight: 100;
 }
 
 header {
@@ -519,7 +534,7 @@ header label {
 .mainajx {
   flex-shrink: 0;
   flex-basis: 70%;
-  height: 34rem;
+  height: 42rem;
   background-color: white;
 }
 
@@ -724,7 +739,6 @@ textarea {
  */
 
 /* hp 24" */
-
 @media (max-width: 3500px) and (min-width: 1800px) {
   html {
     font-size: 72%;
@@ -741,8 +755,7 @@ textarea {
   }
 }
 
-/* macpro */
-
+/* macpro 13"*/
 @media (max-width: 1800px) {
   html {
     font-size: 72%;
@@ -1020,5 +1033,38 @@ textarea {
   .about .column .image {
     flex: 0 0 auto;
     width: 100%;
+  }
+}
+
+/* iphone 6 */
+@media (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+
+  .mySlides img {
+    min-height: 90%;
+  }
+
+  .mySlides {
+    height: 80rem;
+  }
+
+  .about .column .image img {
+    height: 35rem;
+  }
+  .about .column .content p {
+    padding: 5rem 8rem;
+  }
+  .about .column .heading {
+    margin-top: 7rem;
+  }
+
+  .contact .column .content p {
+    padding-bottom: 4rem;
+  }
+
+  .wrapper {
+    margin-top: 70rem;
   }
 }
