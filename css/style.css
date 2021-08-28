@@ -34,6 +34,10 @@
   --white: #ffffff;
 }
 
+#home {
+  overflow: hidden;
+}
+
 /**
  *  Custom styles
  */
@@ -81,13 +85,6 @@ body {
 
 .btn:hover {
   color: var(--black);
-  transition-delay: 0.5s;
-  background-color: var(--yellow);
-}
-
-#wedo-btn-pro:hover,
-#wedo-btn:hover {
-  color: var(--white);
   transition-delay: 0.5s;
   background-color: var(--yellow);
 }
@@ -166,7 +163,6 @@ header label {
   margin-top: 0.1rem;
   left: 40rem;
   width: 55%;
-  height: -50px;
   background: white;
   border-radius: 2px;
   box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
@@ -431,36 +427,38 @@ header label {
   background-color: var(--black);
 }
 
-.about .column .image img {
-  width: 100%;
-  height: 85rem;
+#wedo .column .image,
+.about .column .image {
+  flex: 0 0 auto;
+  width: 60%;
+}
+
+#wedo .column .content,
+.about .column .content {
+  flex: 0 0 auto;
+}
+
+.about img {
+  height: 60rem;
   object-fit: cover;
-}
-
-.about #wedo {
-  display: flex;
-  flex-direction: row-reverse;
   width: 100%;
-  background-color: var(--white);
 }
 
-.about #wedo .content {
-  flex-shrink: 0;
-  flex-basis: 58%;
+#wedo .buttons {
+  border: 1rem;
+  z-index: 1000;
+  margin-right: 13rem;
 }
 
-#wedoheading,
-#wedotext {
-  background-color: var(--white);
-  color: var(--black);
+#wedo p,
+#wedo a,
+#wedo .heading,
+#wedo {
+  flex-direction: row-reverse;
+  background-color: white;
+  color: black;
+  border-color: black;
   text-align: right;
-}
-
-#wedo-btn-pro,
-#wedo-btn {
-  background-color: var(--white);
-  color: var(--black);
-  border-color: var(--black);
 }
 
 .about #careers {
@@ -485,11 +483,6 @@ header label {
   font-size: 7rem;
   line-height: 6.5rem;
   padding: 0 13rem 2rem 13rem;
-}
-
-.about .column .image {
-  flex-shrink: 0;
-  flex-basis: 60%;
 }
 
 /**
@@ -610,10 +603,6 @@ header label {
   padding-right: 13rem;
   padding-bottom: 2rem;
   margin-right: 13rem;
-}
-
-.contact .container #wedo-btn {
-  text-align: left;
 }
 
 form {
@@ -741,14 +730,6 @@ textarea {
     font-size: 72%;
   }
 
-  #wedo-btn-pro {
-    margin-left: 88rem;
-  }
-
-  #wedoheading {
-    margin-right: 1rem;
-  }
-
   .mySlides {
     height: 98rem;
   }
@@ -770,9 +751,6 @@ textarea {
   .mySlides {
     height: 70.5rem;
   }
-  #wedoheading {
-    margin-right: 1rem;
-  }
 
   .wrapper {
     left: 20rem;
@@ -790,18 +768,11 @@ textarea {
     margin-top: 0.2rem;
     font-size: 1.5rem;
   }
-
-  #wedo-btn-pro {
-    margin-left: 47rem;
-  }
 }
 
 @media (max-width: 1400px) {
   html {
     font-size: 40%;
-  }
-  #wedo-btn-pro {
-    margin-left: 50rem;
   }
 }
 
@@ -895,14 +866,6 @@ textarea {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-
-  .about #wedo {
-    text-align: center;
-  }
-
-  #wedo a:last-child {
-    margin-right: 0;
   }
 
   .about .column .content .button a,
@@ -1021,31 +984,28 @@ textarea {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: auto 100%;
+    width: 100%;
   }
 
-  #wedo-btn,
-  .buttons {
-    width: 70%;
-    align-items: center;
-    margin: 0 auto 2rem;
-  }
-
-  #wedoheading,
-  #wedotext {
+  #wedo .heading,
+  #wedo p,
+  #wedo .btn {
     text-align: center;
     width: 100%;
   }
 
-  #wedo-btn-pro,
-  .button {
-    width: 70%;
+  #wedo .buttons,
+  .buttons {
+    width: 80%;
     align-items: center;
     margin: 0 auto 2rem;
   }
 
   .about .column .image img {
-    height: 36rem;
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    border: yellow;
   }
 
   .footer .box-container .nav-footer li {
@@ -1054,5 +1014,11 @@ textarea {
 
   .footer .box-container .socials li {
     font-size: 2rem;
+  }
+
+  #wedo .column .image,
+  .about .column .image {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
