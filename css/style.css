@@ -192,19 +192,8 @@ header label {
  *  HOME
  */
 
-.home .content h3 {
-  font-size: 5.5rem;
-  color: #333;
-  text-transform: uppercase;
-}
-
-.home .content h3 span {
-  color: var(--black);
-  text-transform: uppercase;
-}
-
 .home .content p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--grey);
   padding: 1rem 0;
 }
@@ -276,7 +265,7 @@ header label {
 .text {
   color: #f2f2f2;
   font-size: 4.5rem;
-  padding: 3%;
+  padding: 1, 5%;
   position: absolute;
   width: 20%;
   margin: 0 10%;
@@ -441,7 +430,6 @@ header label {
 }
 
 .about .column .content p {
-  font-size: 1.8rem;
   color: var(--white);
   padding: 1rem 13rem;
 }
@@ -701,7 +689,7 @@ textarea {
 /* hp 24" */
 @media (max-width: 3500px) and (min-width: 1800px) {
   html {
-    font-size: 72%;
+    font-size: 60%;
   }
 
   .mySlides {
@@ -712,7 +700,7 @@ textarea {
 /* macpro 13"*/
 @media (max-width: 1800px) {
   html {
-    font-size: 68%;
+    font-size: 65%;
   }
 
   .mySlides {
@@ -723,12 +711,6 @@ textarea {
     left: 20rem;
     width: 80%;
     border-radius: 1px;
-  }
-}
-
-@media (max-width: 991px) {
-  section {
-    padding: 0 0%;
   }
 }
 
@@ -760,25 +742,12 @@ textarea {
     color: var(--grey);
   }
 
-  header input:checked ~ .navbar {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-
-  header input:checked ~ label::before {
-    content: "\f00d";
-  }
-
   .home {
     flex-flow: column-reverse;
   }
 
   .home .image img {
     width: 100%;
-  }
-
-  .home .content h3 {
-    font-size: 3.6rem;
   }
 
   .home .content p {
@@ -1040,7 +1009,7 @@ header .navbar a {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .nav-links a:hover {
