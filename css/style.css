@@ -689,7 +689,7 @@ textarea {
  */
 
 /* hp 24" */
-@media (max-width: 3500px) and (min-width: 1800px) {
+@media (max-width: 1690px) {
   html {
     font-size: 52%;
   }
@@ -700,7 +700,7 @@ textarea {
 }
 
 /* macpro 13"*/
-@media (max-width: 1800px) {
+@media (max-width: 1280px) {
   html {
     font-size: 50%;
   }
@@ -716,7 +716,7 @@ textarea {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 980px) {
   html {
     font-size: 45%;
   }
@@ -725,7 +725,7 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   header .navbar {
     position: absolute;
     top: 100%;
@@ -776,7 +776,7 @@ textarea {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
     font-size: 50%;
   }
