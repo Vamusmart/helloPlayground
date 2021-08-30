@@ -689,18 +689,18 @@ textarea {
 /* hp 24" */
 @media (max-width: 3500px) and (min-width: 1800px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
   }
 
   .mySlides {
-    height: 98rem;
+    height: 92rem;
   }
 }
 
 /* macpro 13"*/
 @media (max-width: 1800px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
   }
 
   .mySlides {
