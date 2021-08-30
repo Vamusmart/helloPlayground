@@ -159,10 +159,10 @@ header label {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem 8rem;
+  padding: 1rem 1rem;
   background-color: #fff;
   transition: opacity 1s ease;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 #consent-popup.hidden {
@@ -632,6 +632,7 @@ textarea {
   text-align: center;
   background: var(--black);
   padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .footer .box-container .socials {
@@ -715,18 +716,16 @@ textarea {
   }
 }
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
+  html {
+    font-size: 45%;
+  }
   section {
     padding: 0 0%;
   }
-} */
+}
 
 @media (max-width: 768px) {
-  header label {
-    visibility: visible;
-    opacity: 1;
-  }
-
   header .navbar {
     position: absolute;
     top: 100%;
@@ -749,15 +748,6 @@ textarea {
     color: var(--grey);
   }
 
-  header input:checked ~ .navbar {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-
-  header input:checked ~ label::before {
-    content: "\f00d";
-  }
-
   .home {
     flex-flow: column-reverse;
   }
@@ -768,14 +758,6 @@ textarea {
 
   .home .content p {
     font-size: 1.8rem;
-  }
-
-  .about {
-    background-position: right;
-  }
-
-  .newsletter p {
-    width: auto;
   }
 
   .text {
@@ -919,12 +901,17 @@ textarea {
 
   .footer .box-container .socials li {
     font-size: 2rem;
+    padding-bottom: 1rem;
   }
 
   #wedo .column .image,
   .about .column .image {
     flex: 0 0 auto;
     width: 100%;
+  }
+
+  #consent-popup {
+    font-size: 1.3rem;
   }
 }
 
