@@ -12,27 +12,27 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
    
-
 <!-- header section starts  -->
 
 <header id="navbar">
 
-    <a href="#" class="logo"><img src="./images/logo-playground-white.png" alt="Playground logo" class="logo"></a>
+  <a href="#" class="logo"><img src="./images/logo-playground-white.png" alt="Playground logo" class="logo"></a>
+  <ul class="nav-links">
+      <li><a href="#weare">we are</a></li>  
+      <li><a href="#wedo">we do</a></li>  
+      <li><a href="#careers">careers</a></li>  
+      <li><a href="#contactus">contact</a></li>  
+  </ul>
+  <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
 
-    <input type="checkbox" id="menu-bar">
-    <label for="menu-bar" class="fas fa-bars"></label>
-
-    <nav class="navbar">
-        <a href="#weare">we are</a>
-        <a href="#wedo">we do</a>
-        <a href="#careers">careers</a>
-        <a href="#contactus">contact</a>
 </header>
 
 <!-- header section ends -->
@@ -43,7 +43,6 @@
     <div class="content">
 
           <!-- Slides section starts  -->
-        
         <section class="features" id="features">  
             <div class="slideshow-container">
 
@@ -79,8 +78,11 @@
                   <span class="dot" onclick="currentSlide(2)"></span>
                   <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-              </div>
+            
+            </div>
+
         </section>
+       
 
 
         <!-- slides section ends  -->
@@ -226,9 +228,9 @@
                         </div>
                         
                         <div class="btn" onclick="sendContact();">Send ></div>
-                      </div>
-                    </form>
-
+                      
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -252,6 +254,7 @@
                         <li><a href="#careers">careers</a></li>
                         <li><a href="#contactus">contact us</a></li>
                     </ul>
+
                 </div>
             
                 <div>
@@ -260,32 +263,36 @@
                         <li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
+                    
                 </div>
                  
 
                 <p>
                     <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                        <img style id="w3c"="border:0;width:88px;height:31px"
-                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                            alt="CSS Valido!" />
-                        </a>
-                    </p>
-
+                        <img style id="w3c"="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valido!" />
+                    </a>
+                </p>
             </div>
         </div>
 
         <!-- footer ends -->
 
 
+        <!-- CookiePolicy starts  -->
 
         <div class="wrapper">
+
           <div id="consent-popup"class="hidden">
            <p>This website uses cookies to improve your experience. Find out more in our
            <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.</p>
            <div class="item">
              <a id="accept" href="#">OK</a></div></p>
           </div>
+
         </div>
+
+         <!-- CookiePolicy starts  -->
+
 
 
 

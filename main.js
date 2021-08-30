@@ -43,7 +43,34 @@ window.onload = () => {
 
 
 ///// Navbar starts /////
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
+    
+    burger.addEventListener('click', () => {
+        // Toggle nav
+        nav.classList.toggle('nav-active');
+  
+    
+        // Animate Links with a delay between each menu voice
+        navLinks.forEach((link, index) => {
+          if (link.style.animation){
+              link.style.animation = '';
+          } else { 
+             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 1}s`
+            }
+        });
+
+        //Burger animation
+        burger.classList.toggle('toggle');
+    });
+}
+
+navSlide();
+
+//scrolling Nav
 const navbar = document.getElementById('navbar')
 
 // OnScroll event handler
@@ -249,8 +276,6 @@ if (isValid()){
   
       }
       
-  
-  
           
       //Button 2
       document.getElementById("load-2").onclick = function(){
@@ -297,8 +322,6 @@ if (isValid()){
           request.send();
   
       }
-  
-  
   
   
       //Button 3
