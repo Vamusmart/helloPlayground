@@ -688,8 +688,7 @@ textarea {
  *  MEDIA QUERIES
  */
 
-/* hp 24" */
-/* @media (max-width: 1690px) {
+@media (max-width: 1690px) and (min-width: 1800px) {
   html {
     font-size: 52%;
   }
@@ -697,10 +696,9 @@ textarea {
   .mySlides {
     height: 120rem;
   }
-} */
+}
 
-/* macpro 13"*/
-@media (max-width: 1281px) {
+@media (max-width: 1280px) {
   html {
     font-size: 50%;
   }
@@ -709,14 +707,14 @@ textarea {
     height: 75rem;
   }
 
-  /* .wrapper {
+  .wrapper {
     left: 20rem;
     width: 80%;
     border-radius: 1px;
-  } */
+  }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 980px) {
   html {
     font-size: 45%;
   }
@@ -725,7 +723,7 @@ textarea {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 736px) {
   header .navbar {
     position: absolute;
     top: 100%;
@@ -776,7 +774,7 @@ textarea {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   html {
     font-size: 50%;
   }
@@ -915,8 +913,7 @@ textarea {
   }
 }
 
-/* iphone 6 */
-@media (min-width: 320px) {
+@media (max-width: 375px) {
   html {
     font-size: 50%;
   }
