@@ -193,7 +193,7 @@ header label {
  */
 
 .home .content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--grey);
   padding: 1rem 0;
 }
@@ -265,7 +265,7 @@ header label {
 .text {
   color: #f2f2f2;
   font-size: 4.5rem;
-  padding: 1, 5%;
+  padding: 3%;
   position: absolute;
   width: 20%;
   margin: 0 10%;
@@ -430,6 +430,7 @@ header label {
 }
 
 .about .column .content p {
+  font-size: 1.8rem;
   color: var(--white);
   padding: 1rem 13rem;
 }
@@ -693,14 +694,14 @@ textarea {
   }
 
   .mySlides {
-    height: 92rem;
+    height: 90rem;
   }
 }
 
 /* macpro 13"*/
 @media (max-width: 1800px) {
   html {
-    font-size: 65%;
+    font-size: 68%;
   }
 
   .mySlides {
@@ -713,6 +714,12 @@ textarea {
     border-radius: 1px;
   }
 }
+
+/* @media (max-width: 991px) {
+  section {
+    padding: 0 0%;
+  }
+} */
 
 @media (max-width: 768px) {
   header label {
@@ -740,6 +747,15 @@ textarea {
     margin: 2rem 0;
     font-size: 2rem;
     color: var(--grey);
+  }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header input:checked ~ label::before {
+    content: "\f00d";
   }
 
   .home {
@@ -1009,7 +1025,7 @@ header .navbar a {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .nav-links a:hover {
