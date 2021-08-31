@@ -765,7 +765,7 @@ textarea {
 
 @media (max-width: 480px) {
   html {
-    font-size: 50%;
+    font-size: 25%;
   }
 
   .about .column .content .buttons a {
