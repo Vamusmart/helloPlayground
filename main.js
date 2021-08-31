@@ -15,7 +15,7 @@ const cookieStorage = {
 }
 
 const storageType = cookieStorage;
-const consentPropertyName = 'jdc_consent';
+const consentPropertyName = 'Playground - HelloCookie';
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
