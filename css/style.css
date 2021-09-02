@@ -732,7 +732,10 @@ textarea {
 
 @media (max-width: 736px) {
   html {
-    font-size: 40%;
+    font-size: 20%;
+  }
+  .nav-links {
+    width: 35%;
   }
 
   .home {
@@ -749,7 +752,7 @@ textarea {
 
   .text {
     width: fit-content;
-    top: 22%;
+    top: 20%;
   }
 
   .content-cookie p {
@@ -761,11 +764,21 @@ textarea {
   .mySlides {
     height: 60rem;
   }
+
+  .input,
+  .msg .area {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 25%;
+    font-size: 50%;
+  }
+
+  .nav-links {
+    width: 100%;
   }
 
   .about .column .content .buttons a {
@@ -958,12 +971,12 @@ textarea {
     padding-bottom: 4rem;
   }
 
-  .input,
+  /* .input,
   .msg .area {
     padding: 2rem;
     box-sizing: border-box;
     margin-bottom: 2rem;
-  }
+  } */
 }
 
 /**
@@ -989,7 +1002,7 @@ textarea {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 40%;
 }
 
 .nav-links li {
