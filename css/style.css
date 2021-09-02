@@ -291,12 +291,15 @@ header label {
 .mySlides {
   display: none;
   width: 100%;
+  height: 80rem;
 }
 
 .mySlides img {
   object-fit: cover;
   min-width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
@@ -785,7 +788,7 @@ textarea {
 
 @media (max-width: 736px) {
   html {
-    font-size: 30%;
+    font-size: 25%;
   }
   .nav-links {
     width: 35%;
@@ -814,9 +817,8 @@ textarea {
     font-size: 1.8rem;
   }
 
-  .mySlides {
-    max-width: 100%;
-    height: auto;
+  .mySlides img {
+    min-height: 90%;
   }
 
   .input,
