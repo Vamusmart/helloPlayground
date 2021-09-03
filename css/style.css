@@ -765,7 +765,9 @@ textarea {
   html {
     font-size: 50%;
   }
-
+  .text {
+    color: yellow;
+  }
   .mySlides {
     height: 75rem;
   }
@@ -784,14 +786,24 @@ textarea {
   section {
     padding: 0 0%;
   }
+  .text {
+    color: red;
+  }
+
+  .nav-links {
+    width: 50%;
+  }
 }
 
 @media (max-width: 736px) {
   html {
-    font-size: 25%;
+    font-size: 35%;
   }
   .nav-links {
-    width: 35%;
+    width: 50%;
+  }
+  .text {
+    color: purple;
   }
 
   .home {
@@ -807,10 +819,12 @@ textarea {
   }
 
   .text {
-    width: fit-content;
     top: 20%;
   }
 
+  .mySlides {
+    height: 85rem;
+  }
   .content-cookie p {
     margin-left: 0.2rem;
     margin-top: 0.2rem;
@@ -826,6 +840,10 @@ textarea {
     padding: 2rem;
     margin-bottom: 2rem;
   }
+
+  form {
+    max-width: 50rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -833,6 +851,9 @@ textarea {
     font-size: 50%;
   }
 
+  .text {
+    color: yellow;
+  }
   .about .column .content .buttons a {
     width: 100%;
     text-align: center;
@@ -844,7 +865,8 @@ textarea {
 
   .text {
     text-align: center;
-    top: 25%;
+    top: 35%;
+    width: fit-content;
   }
 
   .prev,
@@ -1002,6 +1024,9 @@ textarea {
     font-size: 50%;
   }
 
+  .text {
+    color: olive;
+  }
   .mySlides img {
     min-height: 92%;
   }
@@ -1041,12 +1066,6 @@ textarea {
     transform: rotate(45deg) translate(-5px, -6px);
     background-color: black;
   }
-  /* .input,
-  .msg .area {
-    padding: 2rem;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-  } */
 }
 
 @keyframes navLinkFade {
