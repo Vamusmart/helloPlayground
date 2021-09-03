@@ -764,13 +764,13 @@ textarea {
 
 @media (max-width: 1280px) {
   html {
-    font-size: 50%;
+    font-size: 56%;
   }
   .text {
     color: yellow;
   }
   .mySlides {
-    height: 75rem;
+    height: 85rem;
   }
 
   .wrapper {
@@ -857,8 +857,9 @@ textarea {
   }
 
   .text {
-    color: yellow;
+    color: rgb(0, 204, 255);
   }
+
   .about .column .content .buttons a {
     width: 100%;
     text-align: center;
