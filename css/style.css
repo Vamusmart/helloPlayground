@@ -795,7 +795,7 @@ textarea {
   }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 770px) {
   html {
     font-size: 35%;
   }
@@ -842,7 +842,11 @@ textarea {
   }
 
   form {
-    max-width: 50rem;
+    max-width: 40rem;
+  }
+
+  .contact .column .heading {
+    padding-right: 0;
   }
 }
 
