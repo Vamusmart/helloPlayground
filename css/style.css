@@ -1021,6 +1021,24 @@ textarea {
     display: block;
     cursor: pointer;
   }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: black;
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: black;
+  }
 }
 
 @media (max-width: 375px) {
