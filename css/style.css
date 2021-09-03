@@ -702,6 +702,7 @@ textarea {
   display: flex;
   margin: 3rem;
   margin-bottom: 0;
+  list-style-type: none;
 }
 
 .footer .box-container .socials li {
