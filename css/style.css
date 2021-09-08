@@ -431,7 +431,7 @@ header label {
 }
 
 .card .box-container .box .box-text {
-  margin: 10rem;
+  margin: 7rem;
   line-height: 2.5rem;
   height: 14rem;
 }
@@ -755,15 +755,19 @@ textarea {
 
 @media (max-width: 1690px) and (min-width: 1800px) {
   html {
-    font-size: 52%;
+    font-size: 50%;
   }
 
   .mySlides {
     height: 120rem;
   }
+
+  .card .box-container .box {
+    flex: 1 1 15rem;
+  }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1600px) {
   html {
     font-size: 56%;
   }
@@ -788,6 +792,10 @@ textarea {
   #consent-popup {
     font-size: 2rem;
   }
+
+  .card .box-container .box .box-text {
+    margin: 3rem;
+  }
 }
 
 @media (max-width: 980px) {
@@ -803,6 +811,14 @@ textarea {
 
   .nav-links {
     width: 50%;
+  }
+
+  .card .box-container .box-text {
+    margin: 3rem;
+  }
+
+  .home .content p {
+    padding: 0;
   }
 }
 
@@ -858,6 +874,10 @@ textarea {
 
   .contact .column .heading {
     padding-right: 0;
+  }
+
+  .card .box-container .box .box-text {
+    margin: 6rem;
   }
 }
 
@@ -1077,6 +1097,7 @@ textarea {
   }
   .about .column .content p {
     padding: 5rem 8rem;
+    font-size: 2.4rem;
   }
   .about .column .heading {
     margin-top: 10rem;
@@ -1102,6 +1123,20 @@ textarea {
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
     background-color: black;
+  }
+
+  .home .content p {
+    font-size: 2.3rem;
+  }
+
+  #load-1,
+  #load-2,
+  #load-3 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links a {
+    font-size: 2rem;
   }
 }
 
