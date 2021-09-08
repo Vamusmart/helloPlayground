@@ -701,7 +701,6 @@ textarea {
 .footer .box-container .socials {
   display: flex;
   margin: 3rem;
-  margin-bottom: 0;
   list-style-type: none;
 }
 
