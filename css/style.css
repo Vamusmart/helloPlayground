@@ -1139,6 +1139,20 @@ textarea {
   }
 }
 
+@media (max-width: 320px) {
+  .text {
+    color: orchid;
+  }
+
+  .contact .column .heading {
+    padding-left: 3rem;
+  }
+
+  .about .column .content p {
+    padding: 5rem 6rem;
+  }
+}
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
