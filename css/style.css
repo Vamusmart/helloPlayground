@@ -848,8 +848,6 @@ textarea {
   #consent-popup {
     left: 0.8rem;
     right: 0.8rem;
-    padding: 1rem 1rem;
-    font-size: 2rem;
     text-align: justify;
   }
 }
@@ -878,7 +876,7 @@ textarea {
   }
 
   .text {
-    top: 20%;
+    top: 35%;
   }
 
   .mySlides {
@@ -913,11 +911,7 @@ textarea {
   }
 
   #consent-popup {
-    left: 0.8rem;
-    right: 0.8rem;
-    padding: 1rem 1rem;
     font-size: 2.6rem;
-    text-align: justify;
   }
 }
 
@@ -1064,11 +1058,7 @@ textarea {
   }
 
   #consent-popup {
-    left: 0.8rem;
-    right: 0.8rem;
-    padding: 1rem 1rem;
     font-size: 1.6rem;
-    text-align: justify;
   }
 
   body {
@@ -1185,11 +1175,7 @@ textarea {
   }
 
   #consent-popup {
-    left: 0.8rem;
-    right: 0.8rem;
-    padding: 1rem 1rem;
     font-size: 1.8rem;
-    text-align: justify;
   }
 
   #accept {
@@ -1212,6 +1198,10 @@ textarea {
 
   .contact .column .content p {
     margin-left: 17rem;
+  }
+
+  #accept {
+    font-size: 1.5rem;
   }
 }
 
