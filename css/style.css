@@ -1060,6 +1060,7 @@ textarea {
   }
 
   .flex-ajx {
+    padding-bottom: 3rem;
     flex-direction: column;
     margin-top: 2rem;
     text-align: center;
