@@ -570,6 +570,7 @@ header label {
 #update {
   font-size: 2rem;
   padding: 3rem;
+  padding-bottom: 4.5rem;
 }
 
 #load-1 {
