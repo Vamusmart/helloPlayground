@@ -1019,6 +1019,10 @@ textarea {
     bottom: 14%;
   }
 
+  .contact .column {
+    margin-top: 3rem;
+  }
+
   .contact .column .heading {
     text-align: left;
     color: transparent;
@@ -1057,7 +1061,7 @@ textarea {
     max-width: 90%;
     padding: 0.5rem;
     background-color: white;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
 
   .flex-ajx {
