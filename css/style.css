@@ -1057,10 +1057,10 @@ textarea {
     max-width: 90%;
     padding: 0.5rem;
     background-color: white;
+    padding-bottom: 5rem;
   }
 
   .flex-ajx {
-    padding-bottom: 3rem;
     flex-direction: column;
     margin-top: 2rem;
     text-align: center;
