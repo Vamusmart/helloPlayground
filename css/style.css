@@ -981,7 +981,7 @@ textarea {
   .text {
     color: rgb(0, 204, 255);
     text-align: center;
-    top: 23%;
+    top: 25%;
     width: fit-content;
   }
 
@@ -1061,7 +1061,7 @@ textarea {
     max-width: 90%;
     padding: 0.5rem;
     background-color: white;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
   }
 
   .flex-ajx {
@@ -1183,7 +1183,7 @@ textarea {
 
   .text {
     color: olive;
-    top: 23%;
+    top: 25%;
   }
   .mySlides img {
     min-height: 92%;
