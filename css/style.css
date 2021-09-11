@@ -86,7 +86,7 @@ form .btn:hover,
 #wedo .btn:hover,
 .btn:hover {
   color: var(--black);
-  transition-delay: 0.5s;
+  transition-delay: 0.1s;
   background-color: var(--yellow);
 }
 
@@ -218,7 +218,7 @@ header label {
   right: 10rem;
   padding: 1rem 1rem;
   background-color: #fff;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
   font-size: 1.3rem;
 }
 
