@@ -97,24 +97,24 @@ window.addEventListener('scroll', onScroll)
 
 ///// Slider starts /////
 
-var slideIndex = 1;
-var timer = null;
+let slideIndex = 1;
+let timer = null;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+const plusSlides = (n)=> {
 clearTimeout(timer);
 showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+const currentSlide = (n) => {
 clearTimeout(timer);
 showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
 if (n==undefined){n = ++slideIndex}
 if (n > slides.length) {slideIndex = 1}
 if (n < 1) {slideIndex = slides.length}
@@ -138,7 +138,7 @@ timer = setTimeout(showSlides, 8000); /* 8 seconds */
 
 
 // Group all fields into an object
-var fields = {};
+const fields = {};
 
 // Linking all the fields to our fields object
 document.addEventListener("DOMContentLoaded", function() {
@@ -149,20 +149,20 @@ fields.message = document.getElementById('message');
 })
 
 // Checking that the field is not empty 
-function isNotEmpty(value) {
+const isNotEmpty = (value) => {
 if (value == null || typeof value == 'undefined' ) return false;
 return (value.length > 0);
 }
 
 // Check if a string is an email
-function isEmail(email) {
+const isEmail = (email) => {
 let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 return regex.test(String(email).toLowerCase());
 }
 
 // Field validation function
 
-var error_message = document.getElementById("error_message");
+const error_message = document.getElementById("error_message");
 function fieldValidation(field, validationFunction) {
 if (field == null) return false;
 
@@ -183,8 +183,8 @@ return isFieldValid;
 
 // combine all the checks for email and message
 
-function isValid() {
-var valid = true;
+const isValid = () => {
+let valid = true;
 
 valid &= fieldValidation(fields.email, isEmail);
 valid &= fieldValidation(fields.message, isNotEmpty);
@@ -204,21 +204,26 @@ this.message = message;
 }
 
 //Sending the contact form data with JavaScript
-function sendContact() {
+const sendContact = () => {
 if (isValid()){
     let usr = new User(email.value, message.value);
 
         // alert("Thanks for your message.")
         text = "Thanks for your message.";
         display_message.innerHTML = text;
-
-
+        document.getElementById("email").style.display = "none";
+        document.getElementById("message").style.display = "none";
 
 } else {
-        // alert("Fill your email and message fields, please")
+        // text("Fill your email and message fields, please")
         // field.className = 'placeholderRed';
+
         text = "Please Enter valid Email and Message";
         display_message.innerHTML = text;
+        document.getElementById("email").style.borderColor = 'red';
+        document.getElementById("message").style.borderColor = 'red';
+    
+
 
 }    
 }
@@ -235,7 +240,7 @@ if (isValid()){
     //Button 1
     document.getElementById("load-1").onclick = function(){
 
-      var request;
+      let request;
   
       if(window.XMLHttpRequest){
         request = new XMLHttpRequest();
@@ -249,12 +254,12 @@ if (isValid()){
       request.onreadystatechange = function(){
         if((request.readyState === 4) && (request.status === 200)){
           
-          var items = JSON.parse(request.responseText);
+          let items = JSON.parse(request.responseText);
                   console.log(items);
           
-                  var output = "";
+                  let output = "";
   
-                  for(var key in items){
+                  for(let key in items){
                   output +=  items[key].content;
                   document.getElementById('load-1').style.background = "black";
                   document.getElementById('load-1').style.color = "white";
@@ -280,7 +285,7 @@ if (isValid()){
       //Button 2
       document.getElementById("load-2").onclick = function(){
   
-          var request;
+          let request;
   
           if(window.XMLHttpRequest){
               request = new XMLHttpRequest();
@@ -295,12 +300,12 @@ if (isValid()){
           request.onreadystatechange = function(){
               if((request.readyState === 4) && (request.status === 200)){
           
-                  var items = JSON.parse(request.responseText);
+                  let items = JSON.parse(request.responseText);
                   console.log(items);
           
-                  var output = "";
+                  let output = "";
   
-                  for(var key in items){
+                  for(let key in items){
                   output +=  items[key].content;
                   document.getElementById('load-1').style.background = "#bbbbbb";
                   document.getElementById('load-1').style.color = "black";
@@ -327,7 +332,7 @@ if (isValid()){
       //Button 3
       document.getElementById("load-3").onclick = function(){
   
-          var request;
+          let request;
   
           if(window.XMLHttpRequest){
               request = new XMLHttpRequest();
@@ -342,12 +347,12 @@ if (isValid()){
           request.onreadystatechange = function(){
               if((request.readyState === 4) && (request.status === 200)){
           
-                  var items = JSON.parse(request.responseText);
+                  let items = JSON.parse(request.responseText);
                   console.log(items);
           
-                  var output = "";
+                  let output = "";
   
-                  for(var key in items){
+                  for(let key in items){
                   output +=  items[key].content;
                   document.getElementById('load-1').style.background = "#bbbbbb";
                   document.getElementById('load-1').style.color = "black";

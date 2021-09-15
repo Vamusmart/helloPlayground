@@ -220,6 +220,7 @@ header label {
   background-color: #fff;
   transition: opacity 2s ease;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 #consent-popup.hidden {
@@ -657,6 +658,7 @@ form {
   width: 80%;
 }
 
+.email input,
 .input,
 .msg .area {
   background-color: black;
@@ -695,9 +697,10 @@ form {
 
 input,
 textarea {
-  background-color: black;
+  background-color: red;
 }
 
+input #email,
 #email {
   background-color: black;
 }
@@ -815,7 +818,6 @@ textarea {
     right: 0.8rem;
     padding: 1rem 1rem;
     font-size: 2rem;
-    text-align: center;
   }
   .contact .column .heading {
     padding-right: 0;
@@ -853,7 +855,6 @@ textarea {
     right: 0.8rem;
     padding: 1rem 1rem;
     font-size: 2rem;
-    text-align: center;
   }
   .contact .column .heading {
     padding-right: 0;
@@ -894,7 +895,6 @@ textarea {
   #consent-popup {
     left: 0.8rem;
     right: 0.8rem;
-    text-align: justify;
   }
   form {
     max-width: 50rem;
@@ -1124,6 +1124,7 @@ textarea {
 
   #consent-popup {
     font-size: 1.6rem;
+    text-align: justify;
   }
 
   body {
@@ -1183,7 +1184,7 @@ textarea {
 
   .text {
     color: olive;
-    top: 25%;
+    top: 27%;
   }
   .mySlides img {
     min-height: 92%;
