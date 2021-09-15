@@ -141,7 +141,7 @@ timer = setTimeout(showSlides, 8000); /* 8 seconds */
 const fields = {};
 
 // Linking all the fields to our fields object
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 fields.firstName = document.getElementById('firstName');
 fields.lastName = document.getElementById('lastName');
 fields.email = document.getElementById('email');
@@ -163,7 +163,7 @@ return regex.test(String(email).toLowerCase());
 // Field validation function
 
 const error_message = document.getElementById("error_message");
-function fieldValidation(field, validationFunction) {
+const fieldValidation = (field, validationFunction) => {
 if (field == null) return false;
 
 let isFieldValid = validationFunction(field.value)
@@ -238,7 +238,7 @@ if (isValid()){
 ///// AjaxCalls starts /////
 
     //Button 1
-    document.getElementById("load-1").onclick = function(){
+    document.getElementById("load-1").onclick = () => {
 
       let request;
   
@@ -251,7 +251,7 @@ if (isValid()){
   
       request.open('GET', 'json/tab1.json');
   
-      request.onreadystatechange = function(){
+      request.onreadystatechange = () => {
         if((request.readyState === 4) && (request.status === 200)){
           
           let items = JSON.parse(request.responseText);
@@ -283,7 +283,7 @@ if (isValid()){
       
           
       //Button 2
-      document.getElementById("load-2").onclick = function(){
+      document.getElementById("load-2").onclick = () => {
   
           let request;
   
@@ -297,7 +297,7 @@ if (isValid()){
   
           request.open('GET', 'json/tab2.json');
   
-          request.onreadystatechange = function(){
+          request.onreadystatechange = () => {
               if((request.readyState === 4) && (request.status === 200)){
           
                   let items = JSON.parse(request.responseText);
@@ -330,7 +330,7 @@ if (isValid()){
   
   
       //Button 3
-      document.getElementById("load-3").onclick = function(){
+      document.getElementById("load-3").onclick = () => {
   
           let request;
   
@@ -344,7 +344,7 @@ if (isValid()){
   
           request.open('GET', 'json/tab3.json');
   
-          request.onreadystatechange = function(){
+          request.onreadystatechange = () => {
               if((request.readyState === 4) && (request.status === 200)){
           
                   let items = JSON.parse(request.responseText);
