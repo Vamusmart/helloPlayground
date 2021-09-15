@@ -609,6 +609,7 @@ header label {
 #load-1,
 #load-2,
 #load-3 {
+  cursor: pointer;
   box-sizing: border-box;
   width: 100%;
   padding: 2rem;
