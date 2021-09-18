@@ -12,7 +12,7 @@ Vscode https://code.visualstudio.com/
 
 # Special Thanks
 
-Playground - MI https://www.playground.it/it/
+Playground - MI
 
 # W3C CSS Validation Service.
 
