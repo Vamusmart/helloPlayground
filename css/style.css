@@ -481,6 +481,7 @@ header label {
 #wedo .column .content,
 .about .column .content {
   flex: 0 0 auto;
+  padding-bottom: 4rem;
 }
 
 .about img {
@@ -728,19 +729,21 @@ input #email,
 
 .footer .box-container .socials li {
   padding: 0 3rem;
-  font-size: 4rem;
 }
 
 .fa-facebook {
+  font-size: 4rem;
   color: #3b5998;
 }
 
 .fa-linkedin-square {
   color: #007bb5;
+  font-size: 4rem;
 }
 
 .fa-instagram {
   color: #8a3ab9;
+  font-size: 4rem;
 }
 
 .footer .box-container .socials a:hover i {
@@ -760,6 +763,7 @@ input #email,
   text-decoration: none;
   list-style: none;
   margin: 2rem;
+  font-size: 1.9rem;
 }
 
 .footer .box-container img {
@@ -785,6 +789,10 @@ input #email,
 
   .mySlides {
     height: 75rem;
+  }
+  .nav-links a {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
   }
 }
 
@@ -838,8 +846,8 @@ input #email,
   }
 
   .nav-links a {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
   }
 
   .card .box-container .box .box-text {
@@ -889,13 +897,14 @@ input #email,
   }
 
   #accept {
-    padding: 2rem 8.4rem;
+    padding: 1rem 8.4rem;
     font-size: 2rem;
   }
 
   #consent-popup {
     left: 0.8rem;
     right: 0.8rem;
+    padding: 2rem 1rem;
   }
   form {
     max-width: 50rem;
@@ -911,14 +920,30 @@ input #email,
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 765px) {
   html {
-    font-size: 28%;
+    font-size: 35%;
   }
 
+  .about .column .content p {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .about .column .heading {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .buttons {
+    margin-left: 2rem;
+  }
+
+  #wedo .buttons {
+    margin-right: 2rem;
+  }
   .text {
     color: purple;
-    top: 12%;
+    top: 15%;
     padding: 0;
   }
 
@@ -935,7 +960,7 @@ input #email,
   }
 
   .home .content p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .home .content .text p {
@@ -971,6 +996,34 @@ input #email,
 
   #consent-popup {
     font-size: 2.6rem;
+    padding: 1rem 1rem;
+  }
+
+  .container-ajx {
+    font-size: 1.51rem;
+    max-width: 100%;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  #update {
+    font-size: 2rem;
+  }
+
+  .flex-ajx {
+    margin: auto 0rem 8rem;
+  }
+
+  .mainajx {
+    height: 45rem;
+  }
+
+  .contact .column .content p {
+    padding-bottom: 10rem;
+    font-size: 2.2rem;
+  }
+  .card .box-container .box .box-text {
+    margin: 2rem;
   }
 }
 
@@ -1063,6 +1116,7 @@ input #email,
     padding: 0.5rem;
     background-color: white;
     padding-bottom: 12rem;
+    font-size: 1.6rem;
   }
 
   .flex-ajx {
@@ -1073,6 +1127,10 @@ input #email,
 
   .about .column {
     flex-direction: column;
+  }
+
+  .about .column .content p {
+    font-size: 2.4rem;
   }
 
   .about #wedo {
@@ -1253,6 +1311,10 @@ input #email,
 }
 
 @media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+
   .text {
     color: orchid;
     top: 20%;
@@ -1273,6 +1335,10 @@ input #email,
   #accept {
     font-size: 1.5rem;
   }
+}
+
+.card .box-container {
+  padding: 4rem;
 }
 
 @keyframes navLinkFade {
