@@ -325,7 +325,7 @@ header label {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -397,7 +397,7 @@ header label {
 
 .box-circles {
   position: absolute;
-  bottom: 3%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   padding: 1em;
@@ -493,7 +493,7 @@ header label {
 #wedo .buttons {
   border: 1rem;
   z-index: 1000;
-  margin-right: 13rem;
+  margin-right: 10rem;
 }
 
 #wedo p,
@@ -514,11 +514,11 @@ header label {
 .about .column .content p {
   font-size: 1.8rem;
   color: var(--white);
-  padding: 1rem 13rem;
+  padding: 1rem 10rem;
 }
 
 .buttons {
-  margin-left: 13rem;
+  margin-left: 10rem;
 }
 
 .about .column .heading {
@@ -528,7 +528,7 @@ header label {
   color: var(--white);
   font-size: 7rem;
   line-height: 6.5rem;
-  padding: 0 13rem 2rem 13rem;
+  padding: 0 10rem 2rem 10rem;
 }
 
 /**
@@ -839,7 +839,7 @@ input #email,
   }
   .text {
     color: rgb(0, 17, 255);
-    top: 22%;
+    top: 27%;
   }
   .mySlides {
     height: 70rem;
@@ -868,6 +868,14 @@ input #email,
   .contact .column .heading {
     padding-right: 0;
   }
+
+  .prev,
+  .next {
+    top: 35%;
+  }
+  .box-circles {
+    bottom: 25%;
+  }
 }
 
 @media (max-width: 980px) {
@@ -877,7 +885,7 @@ input #email,
 
   .text {
     color: red;
-    top: 20%;
+    top: 23%;
   }
 
   section {
@@ -918,6 +926,10 @@ input #email,
   .contact .column .heading {
     padding-right: 0;
   }
+
+  .box-circles {
+    bottom: 40%;
+  }
 }
 
 @media (max-width: 765px) {
@@ -943,8 +955,9 @@ input #email,
   }
   .text {
     color: purple;
-    top: 15%;
+    top: 20%;
     padding: 0;
+    width: 40%;
   }
 
   .nav-links {
@@ -1035,7 +1048,7 @@ input #email,
   .text {
     color: rgb(0, 204, 255);
     text-align: center;
-    top: 25%;
+    top: 27%;
     width: fit-content;
   }
 
@@ -1245,6 +1258,11 @@ input #email,
     color: olive;
     top: 27%;
   }
+
+  .box-circles {
+    bottom: 20%;
+  }
+
   .mySlides img {
     min-height: 92%;
   }
@@ -1315,9 +1333,13 @@ input #email,
     font-size: 40%;
   }
 
+  .box-circles {
+    bottom: 38%;
+  }
+
   .text {
     color: orchid;
-    top: 20%;
+    top: 25%;
   }
 
   .contact .column .heading {
@@ -1335,10 +1357,10 @@ input #email,
   #accept {
     font-size: 1.5rem;
   }
-}
 
-.card .box-container {
-  padding: 4rem;
+  .card .box-container {
+    padding: 3rem;
+  }
 }
 
 @keyframes navLinkFade {
