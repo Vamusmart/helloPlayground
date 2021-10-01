@@ -397,7 +397,7 @@ header label {
 
 .box-circles {
   position: absolute;
-  bottom: 8%;
+  top: 75%;
   left: 50%;
   transform: translateX(-50%);
   padding: 1em;
@@ -868,14 +868,6 @@ input #email,
   .contact .column .heading {
     padding-right: 0;
   }
-
-  .prev,
-  .next {
-    top: 35%;
-  }
-  .box-circles {
-    bottom: 25%;
-  }
 }
 
 @media (max-width: 980px) {
@@ -928,7 +920,7 @@ input #email,
   }
 
   .box-circles {
-    bottom: 40%;
+    top: 60%;
   }
 }
 
@@ -1083,7 +1075,7 @@ input #email,
     min-height: 90%;
   }
   .box-circles {
-    bottom: 14%;
+    top: 80%;
   }
 
   .contact .column {
@@ -1259,10 +1251,6 @@ input #email,
     top: 27%;
   }
 
-  .box-circles {
-    bottom: 20%;
-  }
-
   .mySlides img {
     min-height: 92%;
   }
@@ -1334,7 +1322,7 @@ input #email,
   }
 
   .box-circles {
-    bottom: 38%;
+    top: 64%;
   }
 
   .text {
